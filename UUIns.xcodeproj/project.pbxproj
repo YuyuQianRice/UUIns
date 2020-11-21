@@ -18,6 +18,8 @@
 		894354C02568CF69002B0434 /* UUInsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894354BF2568CF69002B0434 /* UUInsUITests.swift */; };
 		894354DA2568D372002B0434 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894354D92568D372002B0434 /* LoginViewController.swift */; };
 		894354DF2568D387002B0434 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894354DE2568D387002B0434 /* FeedViewController.swift */; };
+		894354ED2568DBB1002B0434 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894354EC2568DBB1002B0434 /* CameraViewController.swift */; };
+		894355062568EDFD002B0434 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894355052568EDFD002B0434 /* PostTableViewCell.swift */; };
 		D0320EF19EBBF3F1C28A8B26 /* Pods_UUInsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9823BE9A5F9CBEBBD477 /* Pods_UUInsTests.framework */; };
 		DDBE9066B7E5BE919103EC63 /* Pods_UUIns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FF6E90B880B26E36512EAB /* Pods_UUIns.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		894354C12568CF69002B0434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		894354D92568D372002B0434 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		894354DE2568D387002B0434 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		894354EC2568DBB1002B0434 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		894355052568EDFD002B0434 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		BDFC13D6F4162B95CAF36B03 /* Pods-UUIns-UUInsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUIns-UUInsUITests.debug.xcconfig"; path = "Target Support Files/Pods-UUIns-UUInsUITests/Pods-UUIns-UUInsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB023F7F71D10290FA68E876 /* Pods-UUInsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUInsTests.debug.xcconfig"; path = "Target Support Files/Pods-UUInsTests/Pods-UUInsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE6113A3998F91AFB93AF9CB /* Pods-UUInsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUInsTests.release.xcconfig"; path = "Target Support Files/Pods-UUInsTests/Pods-UUInsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,15 +147,12 @@
 		8943549C2568CF68002B0434 /* UUIns */ = {
 			isa = PBXGroup;
 			children = (
+				8943550B2568EE0F002B0434 /* View */,
+				8943550A2568EE04002B0434 /* Controller */,
 				8943549D2568CF68002B0434 /* AppDelegate.swift */,
 				8943549F2568CF68002B0434 /* SceneDelegate.swift */,
-				894354A12568CF68002B0434 /* ViewController.swift */,
-				894354A32568CF68002B0434 /* Main.storyboard */,
 				894354A62568CF69002B0434 /* Assets.xcassets */,
-				894354A82568CF69002B0434 /* LaunchScreen.storyboard */,
 				894354AB2568CF69002B0434 /* Info.plist */,
-				894354D92568D372002B0434 /* LoginViewController.swift */,
-				894354DE2568D387002B0434 /* FeedViewController.swift */,
 			);
 			path = UUIns;
 			sourceTree = "<group>";
@@ -172,6 +173,35 @@
 				894354C12568CF69002B0434 /* Info.plist */,
 			);
 			path = UUInsUITests;
+			sourceTree = "<group>";
+		};
+		8943550A2568EE04002B0434 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				894354D92568D372002B0434 /* LoginViewController.swift */,
+				894354DE2568D387002B0434 /* FeedViewController.swift */,
+				894354EC2568DBB1002B0434 /* CameraViewController.swift */,
+				894354A12568CF68002B0434 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8943550B2568EE0F002B0434 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				894355052568EDFD002B0434 /* PostTableViewCell.swift */,
+				8943550C2568EE19002B0434 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8943550C2568EE19002B0434 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				894354A82568CF69002B0434 /* LaunchScreen.storyboard */,
+				894354A32568CF68002B0434 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,11 +442,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				894355062568EDFD002B0434 /* PostTableViewCell.swift in Sources */,
 				894354DA2568D372002B0434 /* LoginViewController.swift in Sources */,
 				894354A22568CF68002B0434 /* ViewController.swift in Sources */,
 				894354DF2568D387002B0434 /* FeedViewController.swift in Sources */,
 				8943549E2568CF68002B0434 /* AppDelegate.swift in Sources */,
 				894354A02568CF68002B0434 /* SceneDelegate.swift in Sources */,
+				894354ED2568DBB1002B0434 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
