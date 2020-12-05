@@ -184,7 +184,6 @@
 				894354DE2568D387002B0434 /* FeedViewController.swift */,
 				894354EC2568DBB1002B0434 /* CameraViewController.swift */,
 				894354A12568CF68002B0434 /* ViewController.swift */,
-				89475AAF257B7ECA003D42A0 /* CommentCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				894355052568EDFD002B0434 /* PostTableViewCell.swift */,
+				89475AAF257B7ECA003D42A0 /* CommentCell.swift */,
 				8943550C2568EE19002B0434 /* Storyboard */,
 			);
 			path = View;
